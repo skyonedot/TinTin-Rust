@@ -1,0 +1,19 @@
+# Compiled binary files
+/target/
+
+# Dependency directories
+/vendor/
+/.cargo/
+
+# Generated documentation
+/target/doc/
+
+# Editor/IDE specific files
+.idea/
+.vscode/
+
+# Environment variables file
+.env
+
+# Build artifacts
+Cargo.lock
