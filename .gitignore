@@ -1,5 +1,5 @@
 # Compiled binary files
-/target/
+*/target/
 
 # Dependency directories
 /vendor/
@@ -16,4 +16,4 @@
 .env
 
 # Build artifacts
-Cargo.lock
+*Cargo.lock
