@@ -9,3 +9,20 @@
 （3）使用Cargo编译运行此工程
 
 （需要自行发现其中的细节，一个考点是：ascii码字符的顺序）
+
+
+两种Print均可
+fn main() {
+    let start: u8 = b'A';
+    let total_rows = 15;
+
+    for row in 0..total_rows {
+        for col in 0..4 {
+            let index = (row + col * total_rows) as u8;
+            let ascii_value = start + index;
+            print!("{:<4}{:<5}｜", ascii_value, char::from_u32(ascii_value as u32).unwrap());
+            // print!("{:<4}{:<5}｜", ascii_value, ascii_value as char);
+        }
+        println!();
+    }
+}
